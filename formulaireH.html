@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire CV</title>
+    <link rel="stylesheet" href="FORMU.CSS">
+</head>
+
+<body>
+    <form method="get" action="res.html">
+        <center>
+            <h1><font face="Broadway">Bienvenue Dans Notre Communauté CV!</font></h1>
+        </center><br>
+        <h2 style="background-color:#a0a0a0; border:2px solid #404040;">Les informations personnelles:</h2>
+        <div>
+            <label for="EntrezVotreNom">Entrez Votre Nom:</label><br>
+            <input type="text" placeholder="Entrez votre texte ici" id="EntrezVotreNom" name="EntrezVotreNom" required><br><br>
+        </div>
+        <div>
+            <label for="EntrezVotrePrenom">Entrez Votre Prénom :</label><br>
+            <input type="text" placeholder="Entrez votre texte ici" id="EntrezVotrePrenom" name="EntrezVotrePrenom" required><br><br>
+        </div>
+        <div>
+            <label for="email">E-mail :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+        <div>
+            <label for="Tél">Numéro de Téléphone :</label><br>
+            <input type="tel" id="Tél" name="Tél" pattern="[0-9]{10}" required title="Le numéro de téléphone doit être composé de 10 chiffres"><br><br>
+        </div>
+        <div>
+            <label for="adresse">Adresse :</label><br>
+            <input type="text" placeholder="Entrez votre texte ici" id="adresse" name="adresse" required><br><br>
+        </div>
+        <div>
+            <label for="lieuDeNaissance">Lieu de Naissance :</label><br>
+            <input type="text" placeholder="Entrez votre texte ici" id="lieuDeNaissance" name="lieuDeNaissance" required><br><br>
+        </div>
+        <div>
+            Age: <br><input type="number" id="age" required min="18" ><br>
+        </div>
+        <center>
+            <label for="dateDeNaissance">Date de Naissance :</label>
+            <input type="date" id="dateDeNaissance" name="dateDeNaissance" required><br><br>
+        </center>
+        <h2 style="background-color:#a0a0a0; border:2px solid #404040;">Parcours Pédagogique:</h2>
+        <div>
+            <label for="Baccalauréat"><h4>Baccalauréat :</h4></label><br>
+            <label>s.maths</label>
+            <input type="radio" class="espace" id="bacMaths" name="bac" required>
+            <label>s.physiques</label>
+            <input type="radio" class="espace" id="bacPhysiques" name="bac" required>
+            <label>SVT</label>
+            <input type="radio" class="espace" id="bacSVT" name="bac" required>
+            <label>lettre</label>
+            <input type="radio" id="bacLettre" name="bac" required>
+            <label>bac technique</label>
+            <input type="radio" class="espace" id="bacTechnique" name="bac" required>
+        </div>
+        <div style="text-align: right;">
+            <label for="diplomes"><h4>Diplômes :</h4></label>
+            <select id="diplomes" name="diplomes">
+                <option>Diplôme Universitaire de Technologie (DUT)</option>
+                <option>Diplôme des Études Universitaires Générales (DEUG)</option>
+                <option>Diplôme de Technicien Spécialisé (DTS)</option>
+                <option>Brevet de Technicien Supérieur (BTS)</option>
+                <option>Master (Masters Universitaires)</option>
+                <option>Diplôme d'Ingénieur</option>
+                <option>Doctorat</option>
+            </select><br>
+        </div>
+        <br><br>
+        <label for="compétencesTechniques" style="background-color:#a0a0a0; border:2px solid #404040;">Compétences Techniques :</label><br>
+        <input type="text" class="mon-champ" placeholder="Entrez vos compétences techniques ici" id="compétencesTechniques" name="compétencesTechniques" required><br><br>
+
+        <label for="compétencesLinguistiques" style="background-color:#a0a0a0; border:2px solid #404040;">Compétences Linguistiques :</label><br>
+        <input type="text" class="my-champ" placeholder="Entrez vos compétences linguistiques ici" id="compétencesLinguistiques" name="compétencesLinguistiques" required><br><br>
+        
+        <label for="autres" style="background-color:#a0a0a0; border:2px solid #404040;">Autres (loisirs, Sports, etc) :</label><br>
+        <input type="text" class="mon-champ" placeholder="Entrez vos autres compétences ici" id="autres" name="autres" required><br><br>
+        
+        <label for="objectifProfessionnel" style="background-color:#a0a0a0; border:2px solid #404040;">Votre Objectif Professionnel :</label><br>
+        <textarea id="objectifProfessionnel" name="objectifProfessionnel" rows="4" cols="50" placeholder="Entrez votre objectif professionnel ici" required></textarea><br><br>
+        
+        <label for="image" style="background-color:#a0a0a0; border:2px solid #404040;">Sélectionnez une image :</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        <input type="submit" value="Envoyer"><br><br><br><br>
+       <center><button type="submit">Submit</button> </center> 
+
+    </form>
+    <script src="formulaire.js"></script>
+</body>
+
+</html>
